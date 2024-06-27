@@ -7,6 +7,6 @@ abstract class ArticleDoa {
   Future<void> insertArticle(ArticleModel article);
   @delete
   Future<void> deleteArticle(ArticleModel article);
-  @Query('SELECT * FROM articles')
+  @Query('SELECT * FROM article')
   Future<List<ArticleModel>> getSavedArticle();
 }

@@ -155,7 +155,7 @@ class _$ArticleDoa extends ArticleDoa {
 
   @override
   Future<List<ArticleModel>> getSavedArticle() async {
-    return _queryAdapter.queryList('SELECT * FROM articles',
+    return _queryAdapter.queryList('SELECT * FROM article',
         mapper: (Map<String, Object?> row) => ArticleModel(
             id: row['id'] as int?,
             author: row['author'] as String?,
